@@ -1,14 +1,19 @@
-// 生成db.json代码
 const jsonfile = require('jsonfile') 
 const jsonServer = require('json-server')
-const generateActivityList = require('./generate.js') 
+const generateActivityList = require('./mock/generateActivity.js') 
 const fs = require('fs')
-// server.js
+
+
 const server = jsonServer.create()
 const testData = {
-    "posts": [
-        { "id": 1, "title": "json-server", "author": "typicode" }
-    ],
+    "posts": 
+        {
+            code: 0,
+            data: [
+                { "id": 1, "title": "json-server", "author": "typicode" }
+            ],
+            msg: null
+    }
 }
 
 let data = {}

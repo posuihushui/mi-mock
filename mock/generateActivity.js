@@ -15,7 +15,11 @@ const generateActivityList = (len)=>{
         })
     }
     
-    return data
+    return {
+        code: 0,
+        data,
+        msg: null
+    }
 }  
 
 module.exports =  generateActivityList
