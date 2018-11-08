@@ -6,13 +6,11 @@
 
 # production
 /dist
-w
+
 # misc
 .DS_Store
 npm-debug.log*
 
-# mock data 
-/dbs
 
 
 /coverage
