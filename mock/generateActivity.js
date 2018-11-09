@@ -17,7 +17,7 @@ const generateActivityList = (len)=>{
                 type: Math.floor(Math.random()*3),
                 link:Random.url()
             },
-            techniqueList:(new Array(3)).map(()=>{
+            techniqueList:(new Array(3)).fill(1).map(()=>{
                 return {
                     icon: Random.image('200x200'),
                     server: Random.word(4,6),
