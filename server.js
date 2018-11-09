@@ -23,7 +23,7 @@ const jsonOptions = {
 }
 
 async function app (){
-    const activityList = generateActivityList(10)
+    const activityList = generateActivityList(35)
     data['activity-list'] = activityList
     data = {
         ...data,
